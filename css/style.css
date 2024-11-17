@@ -1,0 +1,1589 @@
+@charset "utf-8";
+body{
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    min-width: 460px;
+}
+header{
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    background-color: #000;
+    z-index: 100;
+    /* min-width: 540px; */
+}
+header .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 100px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+header .wrap > nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+header .wrap > nav > ul > li{
+    margin: 0 50px;
+    font-size: 18px;
+    position: relative;
+}
+header .wrap > nav > ul > li img{
+    opacity: 0.6;
+    margin-right: 2px;
+}
+header .wrap > nav > ul > li:hover img{
+    opacity: 1;    
+}
+/* 2차메뉴 시작*/
+header .wrap > nav > ul > li > ul{
+    display: none;
+    padding-top: 40px;
+    position: absolute;
+    top:10px;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+header .wrap > nav > ul > li:hover > ul{
+    display: block;
+}
+header nav > ul> li > ul> li{
+    background-color: #000000;
+    opacity: 0.7;
+    color: #fff;
+    padding: 10px 30px;
+    position: relative;
+    font-size: 14px;
+}
+header nav > ul> li > ul> li:hover{
+    opacity: 1;
+}
+header nav > ul> li > ul> li:nth-child(1){
+    padding-top: 30px;
+}
+header nav > ul> li > ul> li:last-child{
+    padding-bottom: 15px;
+}
+/* 2차메뉴 끝*/
+header .wrap > .menu > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    font-size: 14px;
+}
+header .wrap > .menu > ul > li:last-child{
+    position: relative;
+}
+header .wrap > .menu > ul > li:last-child img{
+    filter: invert(100%);
+    width: 16px;
+}
+header .wrap > .menu > ul > li:last-child span{
+    background-color: #fff;
+    color: #000;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    left: 10px;
+    /* 위치 조정 필요 */
+}
+/* header 끝 */
+/* site_map 시작 */
+.site_map{
+    display: none;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    color: #aaa;
+}
+.site_map > .wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.site_map .site_header{
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site_map .site_header > h2{
+    font-size: 40px;
+}
+.site_map .site_header > .site_off > span{
+    display: block;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+}
+.site_map .site_header > .site_off > span:nth-child(1){
+    transform: rotate(45deg);
+}
+.site_map .site_header > .site_off > span:nth-child(2){
+    transform: rotate(-45deg);
+    position: relative;
+    top: -5px;
+}
+.site_map .site_main > ul{
+    display: flex;
+    justify-content: center;
+    gap: 18%;
+}
+.site_map .site_main > ul > li{
+    font-size: 20px;
+    font-family: bold;
+    text-align: center;
+}
+.site_map .site_main > ul > li > ul{
+    margin-top: 30px;
+}
+.site_map .site_main > ul > li > ul > li{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.site_map .site_main > ul > li > ul > li:hover{
+    color: #fff;
+}
+/* site_map 끝 */
+/* visual */
+#visual{
+    height: 100vh;
+    padding-top: 100px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#visual > .wrap{
+    margin: 0 auto;
+}
+#visual .m_container .section_1{
+    overflow: hidden;
+    margin: 0 auto;
+}
+#visual .m_container .section_1 > .tp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+    position: relative;
+    right: 74px;
+    margin-bottom: 30px;
+}
+#visual .m_container .section_1 > .bm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 74px;
+    padding-bottom: 85px;
+}
+#visual .m_container .section_1 article{
+    /* 포토샵에서보다 사이즈가 너무 커서  width와 height 65px씩 감소*/
+    width: 357px;
+    height: 305px;
+    margin-right: 30px;
+}
+#visual .m_container .section_1 article >img{
+    width: 100%;
+    height: 100%;
+}
+#visual .wrap .arrow> button{
+    background-color: transparent;
+    border: none;
+    opacity: 0.7;
+}
+#visual .wrap .arrow> button:hover{
+    opacity: 1;
+}
+#visual .wrap .arrow> button img{
+    width: 70px;
+    height: 40px;
+}
+#visual .wrap .arrow .prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+#visual .wrap .arrow .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+#visual .wrap .arrow> .next img{
+    transform: rotate(180deg);
+}
+#visual .wrap .section_2{
+    height: 100vh;
+    margin: -104px auto 0;
+    background-image: url(../img/vs01-2_b.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+}
+#visual .wrap .section_2 > .s_img{
+    position: absolute;
+    left: 218px;
+    bottom: 0;
+    width: 513px;
+    height: 660px;
+}
+#visual .wrap .section_2 > .s_img img{
+    /* 기존 사이즈 613 * 760 */
+    width: 100%;
+    height: 100%;
+}
+#visual .wrap .section_2 > .text{
+    position: absolute;
+    bottom: 140px;
+    right: 248px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+/* visual vs1-2완성 */
+#visual .wrap .section_3{
+    height: 100vh;
+    margin: -104px auto 0;
+    background-image: url(../img/vs01-3_b.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#visual .wrap .section_3 > .s_img{
+    position: absolute;
+    right: 300px;
+    bottom: -11px;
+    width: 559px;
+    height: 660px;
+}
+#visual .wrap .section_2 > .s_img img{
+    /* 기존 사이즈 666 * 767 */
+    width: 100%;
+    height: 100%;
+}
+#visual .wrap .section_3 > .text{
+    position: absolute;
+    bottom: 90px;
+    left: 246px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+}
+/* vs01 끝 */
+.vs02{
+    margin: 0 auto;
+    padding: 100px 50px;
+    position: relative;
+}
+.vs02 .vs2_wrapper{
+    margin: 0 auto;
+}
+.vs02 .vs2_wrapper article{
+    width: 407px;
+    height: 407px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin:0 30px;
+}
+.vs02 .vs2_wrapper article img{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.vs02 .wrap .arrow> button{
+    background-color: transparent;
+    border: none;
+}
+.vs02 .wrap .arrow> button img{
+    width: 70px;
+    height: 40px;
+    opacity: 0.3;
+}
+.vs02 .wrap .arrow > button:hover img{
+    opacity: 1;
+}
+.vs02 .wrap .arrow .vs2_prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+.vs02 .wrap .arrow .vs2_next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 100px;
+}
+.vs02 .wrap .arrow .vs2_next img{
+    transform: rotate(180deg);
+}
+/* vs02 끝 */
+/* vs03 시작 */
+.vs03 {
+    margin: 0 auto;
+    height: 100vh;
+}
+.vs03 .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vs03 .wrap > .vs03_1{
+    background-image: url(../img/vs03-1.jpg);
+    width: 33.3%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.vs03 .wrap > article:hover{
+    width: 50%;
+    transition: 3s;
+}
+.vs03 .wrap > article > .txt{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    line-height: 1.8;
+}
+.vs03 .wrap > article > .txt > p{
+    width: 400px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1ms;
+}
+.vs03 .wrap > article:hover > .txt > p{
+    width: 500px;
+    font-size: 25px;
+    transition: 5ms;
+}
+.vs03 .wrap > article > .txt > span{
+    position: relative;
+    top: 20px;
+    left: 190px;
+}
+.vs03 .wrap > article:hover > .txt > span{
+    position: relative;
+    top: 20px;
+    left: 280px;
+}
+.vs03 .wrap > .vs03_2{
+    background-image: url(../img/vs03-2.jpg);
+    width: 33.4%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.vs03 .wrap > .vs03_3{
+    background-image: url(../img/vs03-3.jpg);
+    width: 33.3%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* vs03 끝 */
+/* vs04 시작 */
+.vs04{
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.vs4_img > img:nth-child(1){
+    width: 490px;
+    height: 701px;
+    position: absolute;
+    left: 147px;
+    bottom: 0;
+}
+.vs4_img > img:nth-child(2){
+    width: 767px;
+    height: 686px;
+    position: absolute;
+    right: 167px;
+    top: 68px;
+}
+.vs04 button{
+    position: absolute;
+    bottom: 44px;
+    right: 100px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+}
+/* vs04 끝 */
+/* vs05 시작 */
+.vs05{
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.vs05 .vs5_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vs05 .vs5_img > .left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 92px;
+}
+.vs05 .vs5_img > .left > .lt{
+    margin-bottom: 80px;
+}
+.vs05 .vs5_img > .left > .lt > a:nth-child(1){
+    position: relative;
+    margin-right: 30px;
+    top:50px;
+}
+.vs05 .vs5_img > .left > .lb > a{
+    position: relative;
+    left: 200px;
+}
+.vs05 .vs5_img > .right > a{
+    display: block;
+    width: 652px;
+    height: 835px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.vs05 .vs5_img > .right > a > img{
+    width: 100%;
+    height: 100%;
+}
+.vs05 .vs5_img > .right button{
+    position: absolute;
+    right: 67px;
+    bottom: 62px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+
+}
+/* vs05 끝 */
+/* vs06 시작 */
+.vs06{
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+.vs06 .wrap{
+    padding: 60px 100px 40px;
+}
+.vs06 h2{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.vs06 .contant .slides{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.vs06 .contant .slides li{
+    padding: 15px 30px;
+    background-color: #000;
+    color: #fff;
+    margin: 0 30px;
+}
+.vs06 .contant .slides li div{
+    width: 305px;
+    height: 387px;
+    position: relative;
+    top:33px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.vs06 .contant .slides li div img{
+    width: 100%;
+}
+.vs06 .contant .slides li span{
+    display: block;
+    margin: 35px 0;
+    font-size: 18px;
+}
+.vs06 .contant .slides li span ,p{
+    text-align: center;
+}
+.vs06 .contant .slides li p{
+    width: 305px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: unset;
+    -webkit-line-clamp: 2;
+}
+.vs06 .arrow button{
+    background-color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+.vs06 .arrow button:hover{
+    opacity: 1;
+}
+.vs06 .arrow .vs6_prev{
+    position: absolute;
+    left: 100px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.vs06 .arrow .vs6_next{
+    position: absolute;
+    right: 100px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+.vs06 .arrow button > img{
+    width: 40px;
+    height: 30px;
+    position: relative;
+    left: -1px;
+}
+.vs06 .arrow .vs6_next > img{
+   transform: rotate(180deg);
+}
+/* .vs06 끝 */
+/* footer 시작 */
+footer{
+    background-color: #000;
+}
+footer .wrap{
+    padding: 0 100px;
+}
+footer h2{
+    padding: 50px 0;
+    text-align: center;
+}
+footer .top{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+footer .bottom{
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+footer .bottom p{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+footer .bottom ul > li{
+    line-height: 1.8;
+    text-align: center;
+}
+footer .bottom > .guide > ul > li{
+    line-height: 30px;
+}
+footer .bottom ul > li > span{
+    color: #525252;
+}
+footer .bottom .hours > ul{
+    margin-bottom: 20px;
+}
+footer .bottom .hours > span{
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 10px;
+    text-align: right;
+}
+/* footer 끝 */
+/* aside 시작 */
+aside{
+    position: fixed;
+    z-index: 50;
+    top: 200px;
+    right: 30px;
+}
+aside > .side_meun{
+    position: relative;
+    top: -30px;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+aside > .side_meun > span{
+    content: '';
+    display: block;
+    width:23px;
+    height: 4px;
+    background-color: #000;
+}
+aside > .side_meun > span:nth-child(2){
+    width: 19px;
+    height: 4px;
+    margin: 4px 0;
+}
+aside > .side_meun > span:nth-child(3){
+    width: 18px;
+    height: 4px;
+    position: relative;
+    left: 7px;
+}
+aside >.search_on{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    width: 100%;
+}
+aside > .search_on > #search{
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+aside > .search_on > .off{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+}
+aside > .search_on > .off > span{
+    display: block;
+    content: '';
+    background-color: #fff;
+    width: 20px;
+    height: 5px;
+}
+aside > .search_on > .off > span:nth-child(1){
+    transform: rotate(45deg);
+}
+aside > .search_on > .off > span:nth-child(2){
+    transform: rotate(-45deg);
+    position: relative;
+    top: -5px;
+}
+aside > .search_on > #search > .search_in{
+    border: none;
+    padding: 5px 10px;
+}
+aside > .search_on > #search > .search_in:focus{
+    outline: none;
+}
+aside > .search_on > #search > .text_btn{
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+aside > .search_on > #search > .text_btn > img{
+    filter: invert(100);
+}
+aside > .search_btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 50px;
+}
+aside > .vs_side{
+    position: relative;
+    top: 90px;
+}
+aside > .vs_side > span > a{
+    position: relative;
+    left: 12px;
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #525252;
+    margin-bottom: 20px;
+}
+aside > .vs_side > span > a:hover{
+    padding: 2px;
+    border-radius: 50%;
+    background-color: #000;
+    transition: 3ms;
+}
+/* aside 끝 */
+/* 반응형 */
+@media screen and (min-width : 1249px) and (max-width: 1520px){
+    #visual .wrap .arrow> button img{
+        width: 40px;
+        height: 30px;
+    }
+    #visual .wrap .arrow .prev{
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        left: 55px;
+    }
+    #visual .wrap .arrow .next{
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        right: 55px;
+    }
+    #visual .wrap .section_2 > .s_img{
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 313px;
+        height: 460px;
+    }
+    #visual .wrap .section_2 > .text{
+        position: absolute;
+        right: 50px;
+        color: #fff;
+        font-size: 25px;
+    }
+    #visual .wrap .section_3 > .s_img{
+        position: absolute;
+        right: 100px;
+        bottom: -50px;
+        width: 409px;
+        height: 510px;
+    }
+    #visual .wrap .section_3 > .text{
+        position: absolute;
+        left: 50px;
+        font-size: 25px;
+    }
+    .vs4_img > img:nth-child(1){
+        width: 390px;
+        height: 551px;
+        position: absolute;
+        left: 65px;
+        bottom: 0;
+    }
+    .vs4_img > img:nth-child(2){
+        width: 567px;
+        height: 486px;
+        position: absolute;
+        right: 65px;
+        top: 130px;
+    }
+    .vs04 button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }  
+    .vs05 .vs5_img > .left{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+    }
+    .vs05 .vs5_img > .left > .lt{
+        margin-bottom: 80px;
+        display: flex;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(1){
+        position: relative;
+        margin-right: 30px;
+        top:50px;
+        display: block;
+        width: 300px;
+        height: 350px;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(1) > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(2){
+        display: block;
+        width: 300px;
+        height: 350px;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(2) > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .left > .lb > a{
+        position: relative;
+        left: 100px;
+        display: block;
+        width: 450px;
+        height: 150px;
+    }
+    .vs05 .vs5_img > .left > .lb > a > img{
+        width: 100%;
+    }
+    .vs05 .vs5_img > .right > a{
+        display: block;
+        width: 502px;
+        height: 685px;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+    .vs05 .vs5_img > .right > a > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .right button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }  
+
+}
+@media screen and (min-width : 1025px) and (max-width: 1248px){
+    header > .wrap{
+        padding: 25px;
+    }
+    header nav > ul > li > a >span{
+        display: none;
+    }
+    #visual .m_container .section_1 > .tp{
+        position: relative;
+        right: 44px;    
+        padding-top: 140px;
+        margin-bottom: 30px;
+    }
+    #visual .m_container .section_1 > .bm{
+        padding-bottom: 30px;
+    }
+    #visual .m_container .section_1 article{
+        /* 포토샵에서보다 사이즈가 너무 커서  width와 height 65px씩 감소*/
+        width: 257px;
+        height: 205px;
+        margin-right: 30px;
+    }
+    #visual .wrap .arrow> button img{
+        width: 40px;
+        height: 30px;
+    }
+    #visual .wrap .arrow .prev{
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        left: 55px;
+    }
+    #visual .wrap .arrow .next{
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        right: 55px;
+    }
+    #visual .wrap .section_2 > .s_img{
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 313px;
+        height: 460px;
+    }
+    #visual .wrap .section_2 > .text{
+        position: absolute;
+        right: 50px;
+        color: #fff;
+        font-size: 25px;
+    }
+    #visual .wrap .section_3 > .s_img{
+        position: absolute;
+        right: 100px;
+        bottom: -50px;
+        width: 409px;
+        height: 510px;
+    }
+    #visual .wrap .section_3 > .text{
+        position: absolute;
+        left: 50px;
+        font-size: 25px;
+    }
+    .vs02 .vs2_wrapper article{
+        width: 307px;
+        height: 307px;
+    }
+    .vs02 .wrap .arrow> button img{
+        width: 30px;
+        height: 20px;
+    }
+    .vs02 .wrap .arrow .vs2_prev{
+        position: absolute;
+        transform: translateY(-50%);
+        left: 50px;
+    }
+    .vs02 .wrap .arrow .vs2_next{
+        position: absolute;
+        transform: translateY(-50%);
+        right: 50px;
+    }
+    .vs03 .wrap > article > .txt > p{
+        width: 300px;
+        font-size: 14px;
+        font-weight: bold;
+        transition: 1ms;
+    }
+    .vs03 .wrap > article:hover > .txt > p{
+        width: 300px;
+        font-size: 16px;
+        transition: 5ms;
+    }
+    .vs03 .wrap > article > .txt > b{
+        font-size: 14px;
+        position: relative;
+        left: 26px;
+    }
+    .vs03 .wrap > article > .txt > span{
+        position: relative;
+        top: 20px;
+        left: 100px;
+        font-size: 14px;
+    }
+    .vs03 .wrap > article:hover > .txt > span{
+        position: relative;
+        top: 20px;
+        left: 135px;
+        font-size: 16px;
+    }
+    .vs4_img > img:nth-child(1){
+        width: 290px;
+        height: 451px;
+        position: absolute;
+        left: 65px;
+        bottom: 0;
+    }
+    .vs4_img > img:nth-child(2){
+        width: 467px;
+        height: 386px;
+        position: absolute;
+        right: 65px;
+        top: 130px;
+    }
+    .vs04 button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }  
+    .vs05 .vs5_img > .left{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50px;
+    }
+    .vs05 .vs5_img > .left > .lt{
+        margin-bottom: 80px;
+        display: flex;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(1){
+        position: relative;
+        margin-right: 30px;
+        top:80px;
+        display: block;
+        width: 200px;
+        height: 250px;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(1) > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(2){
+        display: block;
+        width: 200px;
+        height: 250px;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(2) > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .left > .lb > a{
+        position: relative;
+        top: 50px;
+        left: 60px;
+        display: block;
+        width: 350px;
+        height: 50px;
+    }
+    .vs05 .vs5_img > .left > .lb > a > img{
+        width: 100%;
+    }
+    .vs05 .vs5_img > .right > a{
+        display: block;
+        width: 502px;
+        height: 685px;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+    }
+    .vs05 .vs5_img > .right > a > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .right button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }  
+    .vs06 h2{
+        font-size: 50px;
+    }
+    .vs06 .contant .slides li{
+        padding: 10px 15px;
+    }
+    .vs06 .contant .slides li div{
+        width: 255px;
+        height: 357px;
+        position: relative;
+        top:20px;
+    }
+    .vs06 .contant .slides li span{
+        display: block;
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .vs06 .contant .slides li span ,p{
+        text-align: center;
+    }
+    .vs06 .arrow button{
+        background-color: #fff;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+    .vs06 .arrow button:hover{
+        opacity: 1;
+    }
+    .vs06 .arrow .vs6_prev{
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .vs06 .arrow .vs6_next{
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    header > .wrap{
+        padding: 25px;
+    }
+    header nav > ul > li{
+        display: none;
+    }
+    #visual .m_container .section_1 > .tp{
+        position: relative;
+        right: 44px;    
+        padding-top: 140px;
+        margin-bottom: 30px;
+    }
+    #visual .m_container .section_1 > .bm{
+        padding-bottom: 30px;
+    }
+    #visual .m_container .section_1 article{
+        width: 257px;
+        height: 205px;
+        margin-right: 30px;
+    }
+    #visual .wrap .arrow> button img{
+        width: 40px;
+        height: 30px;
+    }
+    #visual .wrap .arrow .prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 55px;
+    }
+    #visual .wrap .arrow .next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 55px;
+    }
+    #visual .wrap .section_2 > .s_img{
+        position: absolute;
+        left: 100px;
+        bottom: 0;
+        width: 283px;
+        height: 410px;
+    }
+    #visual .wrap .section_2 > .text{
+        position: absolute;
+        right: 50px;
+        color: #fff;
+        font-size: 20px;
+    }
+    #visual .wrap .section_3 > .s_img{
+        position: absolute;
+        right: 100px;
+        bottom: -50px;
+        width: 359px;
+        height: 460px;
+    }
+    #visual .wrap .section_3 > .text{
+        position: absolute;
+        left: 50px;
+        font-size: 20px;
+    }
+    .vs02 .vs2_wrapper article{
+        width: 207px;
+        height: 207px;
+    }
+    .vs02 .wrap .arrow> button img{
+        width: 30px;
+        height: 20px;
+    }
+    .vs02 .wrap .arrow .vs2_prev{
+        position: absolute;
+        transform: translateY(-50%);
+        left: 50px;
+    }
+    .vs02 .wrap .arrow .vs2_next{
+        position: absolute;
+        transform: translateY(-50%);
+        right: 50px;
+    }
+    .vs03 .wrap > article > .txt > p{
+        width: 270px;
+        font-size: 14px;
+    }
+    .vs03 .wrap > article:hover > .txt > p{
+        width: 300px;
+        font-size: 14px;
+    }
+    .vs03 .wrap > article > .txt > b{
+        font-size: 14px;
+        position: relative;
+        left: 26px;
+    }
+    .vs03 .wrap > article > .txt > span{
+        position: relative;
+        top: 20px;
+        left: 100px;
+        font-size: 14px;
+    }
+    .vs03 .wrap > article:hover > .txt > span{
+        position: relative;
+        top: 20px;
+        left: 135px;
+        font-size: 16px;
+    }
+    .vs4_img > img:nth-child(1){
+        width: 240px;
+        height: 401px;
+        position: absolute;
+        left: 65px;
+        bottom: 0;
+    }
+    .vs4_img > img:nth-child(2){
+        width: 417px;
+        height: 336px;
+        position: absolute;
+        right: 65px;
+        top: 130px;
+    }
+    .vs04 button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }  
+    .vs05 .vs5_img > .left{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+    }
+    .vs05 .vs5_img > .left > .lt{
+        margin-bottom: 80px;
+        display: flex;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(1){
+        position: relative;
+        margin-right: 30px;
+        top:80px;
+        display: block;
+        width: 150px;
+        height: 200px;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(1) > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(2){
+        position: relative;
+        top: -100px;
+        left: -30px;
+        display: block;
+        width: 150px;
+        height: 200px;
+    }
+    .vs05 .vs5_img > .left > .lt > a:nth-child(2) > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .left > .lb > a{
+        position: relative;
+        top: 50px;
+        left: 40px;
+        display: block;
+        width: 250px;
+        height: 50px;
+    }
+    .vs05 .vs5_img > .left > .lb > a > img{
+        width: 100%;
+    }
+    .vs05 .vs5_img > .right > a{
+        display: block;
+        width: 452px;
+        height: 635px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .vs05 .vs5_img > .right > a > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .right button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }
+    .vs06 .wrap{
+        padding: 50px 50px 20px;
+    } 
+    .vs06 h2{
+        font-size: 40px;
+    }
+    .vs06 .contant .slides li{
+        padding: 5px 10px;
+    }
+    .vs06 .contant .slides li div{
+        width: 255px;
+        height: 357px;
+        position: relative;
+        top:20px;
+    }
+    .vs06 .contant .slides li span{
+        display: block;
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .vs06 .contant .slides li span ,p{
+        text-align: center;
+    }
+    .vs06 .contant .slides li p{
+        margin-bottom: 20px;
+    }
+    .vs06 .arrow button{
+        background-color: #fff;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+    .vs06 .arrow button:hover{
+        opacity: 1;
+    }
+    .vs06 .arrow .vs6_prev{
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .vs06 .arrow .vs6_next{
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width: 767px){
+    header > .wrap{
+        padding: 25px;
+    }
+    header nav {
+        display: none;
+    }
+    header .menu {
+        display: none;
+    }
+    #visual .m_container .section_1 > .tp{
+        position: relative; 
+        left: 0;
+        padding-top: 140px;
+        margin-bottom: 30px;
+    }
+    #visual .m_container .section_1 > .bm{
+        padding-bottom: 30px;
+        position: relative;
+        left: 0;
+    }
+    #visual .m_container .section_1 article{
+        width: 207px;
+        height: 155px;
+        margin-right: 30px;
+    }
+    #visual .m_container .section_1 article:nth-child(3){
+        margin-right: 0;
+    }
+    #visual .m_container .section_1 article:nth-child(6){
+        margin-right: 0;
+    }
+    #visual .wrap .arrow> button img{
+        width: 40px;
+        height: 30px;
+    }
+    #visual .wrap .arrow .prev{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 55px;
+    }
+    #visual .wrap .arrow .next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 55px;
+    }
+    #visual .wrap .section_2 > .s_img{
+        position: absolute;
+        left: 80px;
+        width: 253px;
+        height: 310px;
+    }
+    #visual .wrap .section_2 > .text{
+        position: absolute;
+        right: 50px;
+        color: #fff;
+        font-size: 18px;
+    }
+    #visual .wrap .section_3 > .s_img{
+        position: absolute;
+        right: 80px;
+        bottom: -50px;
+        width: 259px;
+        height: 350px;
+    }
+    #visual .wrap .section_3 > .text{
+        position: absolute;
+        top: 60%;
+        left: 50px;
+        font-size: 18px;
+    }
+    .vs02{
+        margin: 0 auto;
+        padding: 50px 50px;
+        position: relative;
+    }
+    .vs02 .vs2_wrapper article{
+        width: 157px;
+        height: 157px;
+    }
+    .vs02 .wrap .arrow> button img{
+        width: 30px;
+        height: 20px;
+    }
+    .vs02 .wrap .arrow .vs2_prev{
+        position: absolute;
+        transform: translateY(-50%);
+        left: 50px;
+    }
+    .vs02 .wrap .arrow .vs2_next{
+        position: absolute;
+        transform: translateY(-50%);
+        right: 50px;
+    }
+    .vs03 .wrap > article > .txt > p{
+        width: 130px;
+        font-size: 10px;
+    }
+    .vs03 .wrap > article:hover > .txt > p{
+        width: 130px;
+        font-size: 12px;
+    }
+    .vs03 .wrap > article > .txt > b{
+        font-size: 8px;
+        position: relative;
+        left: 10px;
+    }
+    .vs03 .wrap > article > .txt > span{
+        position: relative;
+        top: 20px;
+        left: 30px;
+        font-size: 10px;
+    }
+    .vs03 .wrap > article:hover > .txt > span{
+        position: relative;
+        left: 30px;
+        font-size: 14px;
+    }
+    .vs04{
+        height: 60vh;
+        margin: 0 auto;
+        position: relative;
+    }
+    .vs4_img > img:nth-child(1){
+        width: 190px;
+        height: 301px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .vs4_img > img:nth-child(2){
+        width: 267px;
+        height: 186px;
+        position: absolute;
+        right: 65px;
+        top: 10px;
+    }
+    .vs04 button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }  
+    .vs05 .vs5_img > .left{
+        display: none;
+    }
+    .vs05 .vs5_img > .right > a{
+        display: block;
+        width: 552px;
+        height: 735px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% , -50%);
+    }
+    .vs05 .vs5_img > .right > a > img{
+        width: 100%;
+        height: 100%;
+    }
+    .vs05 .vs5_img > .right button{
+        position: absolute;
+        right: 50px;
+        font-size: 25px;    
+    }
+    .vs06 .wrap{
+        padding: 50px 50px 20px;
+    } 
+    .vs06 h2{
+        font-size: 30px;
+    }
+    .vs06 .contant .slides li{
+        padding: 5px 10px;
+    }
+    .vs06 .contant .slides li div{
+        width: 255px;
+        height: 357px;
+        position: relative;
+        top:20px;
+    }
+    .vs06 .contant .slides li span{
+        display: block;
+        margin: 15px 0;
+        font-size: 16px;
+    }
+    .vs06 .contant .slides li span ,p{
+        text-align: center;
+    }
+    .vs06 .contant .slides li p{
+        margin-bottom: 20px;
+    }
+    .vs06 .arrow button{
+        background-color: #fff;
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+    .vs06 .arrow button:hover{
+        opacity: 1;
+    }
+    .vs06 .arrow .vs6_prev{
+        position: absolute;
+        left: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .vs06 .arrow .vs6_next{
+        position: absolute;
+        right: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    footer .wrap{
+        padding: 0 30px;
+    }
+    footer h2{
+        padding: 20px 0;
+    }
+    footer .bottom{
+        color: #fff;
+        font-size: 9px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    footer .bottom p{
+        font-size: 12px;
+    }
+    footer .bottom ul > li{
+        line-height: 1.2;
+    }
+    footer .bottom > .guide > ul > li{
+        line-height: 20px;
+    }
+    footer .bottom ul > li > span{
+        color: #525252;
+    }
+    footer .bottom .hours > ul{
+        margin-bottom: 20px;
+    }
+    footer .bottom .hours > span{
+        display: block;
+        font-size: 10px;
+        font-weight: 900;
+        margin-top: 10px;
+        text-align: right;
+    }
+}
