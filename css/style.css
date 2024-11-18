@@ -555,13 +555,13 @@ header .wrap > .menu > ul > li:last-child span{
 .vs06 .arrow .vs6_prev{
     position: absolute;
     left: 100px;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 }
 .vs06 .arrow .vs6_next{
     position: absolute;
     right: 100px;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 }
 .vs06 .arrow button > img{
@@ -1089,13 +1089,13 @@ aside > .vs_side > span > a:hover{
     .vs06 .arrow .vs6_prev{
         position: absolute;
         left: 60px;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
     }
     .vs06 .arrow .vs6_next{
         position: absolute;
         right: 60px;
-        top: 50%;
+        top: 45%;
         transform: translateY(-50%);
     }
 }
@@ -1326,13 +1326,13 @@ aside > .vs_side > span > a:hover{
     .vs06 .arrow .vs6_prev{
         position: absolute;
         left: 60px;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
     }
     .vs06 .arrow .vs6_next{
         position: absolute;
         right: 60px;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
     }
 }
@@ -1541,13 +1541,13 @@ aside > .vs_side > span > a:hover{
     .vs06 .arrow .vs6_prev{
         position: absolute;
         left: 60px;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
     }
     .vs06 .arrow .vs6_next{
         position: absolute;
         right: 60px;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
     }
     footer .wrap{

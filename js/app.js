@@ -67,24 +67,54 @@ $('aside .search_btn').click(function(){
 $('aside .search_on .off').click(function(){
     $('aside .search_on').css('display','none');
 })
-// 스크롤 이벤트 > 선생님께 여쭈어봐야할듯
-// $(window).scroll(function(){
-//     let current_scroll = $(this).scrollTop();
-//     console.log(current_scroll);
-//     if(current_scroll > 0){
-//         $('aside > .vs_side > .span:firth > a').css('backgroundColor','#000');
-//     }else if(current_scroll > 755){
-//         $('aside > .vs_side > .span:eq(1) > a').css('backgroundColor','#000');
-//     }else if(current_scroll > 1526){
-//         $('aside > .vs_side > .span:eq(2) > a').css('backgroundColor','#000');
-//     }else if(current_scroll > 2439){
-//         $('aside > .vs_side > .span:eq(3) > a').css('backgroundColor','#000');
-//     }else if(current_scroll > 3396){
-//         $('aside > .vs_side > .span:eq(4) > a').css('backgroundColor','#000');
-//     }else{
-//         $('aside > .vs_side > .span:eq(5) > a').css('backgroundColor','#000');
-//     }
-// })
+// 스크롤 이벤트
+$(window).scroll(function(){
+    let current_scroll = $(this).scrollTop();
+    // console.log(current_scroll);
+    if(current_scroll > -100 && current_scroll< 699){
+        $('aside > .vs_side > span:first-child > a').css('background-color','#000');
+        $('aside > .vs_side > span:eq(1) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(2) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(3) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(4) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(5) > a').css('background-color','#525252');
+    }else if(current_scroll > 700 && current_scroll< 1450){
+        $('aside > .vs_side > span:first-child > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(1) > a').css('background-color','#000');
+        $('aside > .vs_side > span:eq(2) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(3) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(4) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(5) > a').css('background-color','#525252');
+    }else if(current_scroll > 1451 && current_scroll< 1900){
+        $('aside > .vs_side > span:first-child > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(1) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(2) > a').css('background-color','#000');
+        $('aside > .vs_side > span:eq(3) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(4) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(5) > a').css('background-color','#525252');
+    }else if(current_scroll > 1901 && current_scroll< 2896){
+        $('aside > .vs_side > span:first-child > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(1) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(2) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(3) > a').css('background-color','#000');
+        $('aside > .vs_side > span:eq(4) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(5) > a').css('background-color','#525252');
+    }else if(current_scroll> 2897 && current_scroll < 3920){
+        $('aside > .vs_side > span:first-child > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(1) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(2) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(3) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(4) > a').css('background-color','#000');
+        $('aside > .vs_side > span:eq(5) > a').css('background-color','#525252');
+    }else if(current_scroll > 3921) {
+        $('aside > .vs_side > span:first-child > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(1) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(2) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(3) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(4) > a').css('background-color','#525252');
+        $('aside > .vs_side > span:eq(5) > a').css('background-color','#000');
+    }
+})
 // site_map
 $('aside .side_meun').click(function(){
     $('.site_map').css('display','block');
